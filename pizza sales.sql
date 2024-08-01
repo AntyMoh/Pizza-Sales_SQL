@@ -36,8 +36,6 @@ drop column price
 alter table pizzas
 add price int8 not null
 
-drop table pizzas
-
 --Calculate the total revenue generated from pizza sales.
 select round(sum(o.quantity*p.price)) as total_sales
 from order_details as o
